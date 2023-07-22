@@ -1,0 +1,25 @@
+/donations
+
+donation
+{
+    donationId: 0,
+    payerName: '',
+    donationDate: '',
+    paymentType: '',
+    amount: 0,
+    purposeType: '',
+    receiverName: '',
+    insertedBy: '',
+    insertedTS: ''        
+}
+
+expense
+{
+    expenseId: 0,
+    expenseDate: '',
+    amount: 0,
+    documentName: '',
+    documentPath: '',
+    insertedBy: '',
+    insertedTS: ''
+}
