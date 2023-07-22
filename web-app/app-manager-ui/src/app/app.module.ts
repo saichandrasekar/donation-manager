@@ -12,11 +12,20 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatButtonModule} from '@angular/material/button';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatCardModule} from '@angular/material/card';
+import { BalancesummaryComponent } from './balancesummary/balancesummary.component';
+import { DonationComponent } from './donation/donation.component';
+import { ExpenseComponent } from './expense/expense.component';
+import { DonationService } from './donation.service';
+import { ExpenseService } from './expense.service';
 
 @NgModule({
   declarations: [
-    AppComponent    
+    AppComponent,
+    DonationComponent,
+    ExpenseComponent    
   ],
+
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,7 +37,10 @@ import { MatCardModule} from '@angular/material/card';
     MatCardModule,
     MatSidenavModule
   ],
-  providers: [],
+  providers: [
+    DonationService,
+    ExpenseService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

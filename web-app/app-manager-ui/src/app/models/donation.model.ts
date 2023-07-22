@@ -5,5 +5,6 @@ export interface Donation {
 	paymentType: string;
 	amount: number;
 	purposeType: string;
-	receiverName: string
+	receiverName: string;
+	position: number;
 }
